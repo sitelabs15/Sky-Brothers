@@ -81,7 +81,7 @@ export function ResultsGallery() {
           </div>
 
           {/* Filter Pills */}
-          <div data-animate="gallery-pills" className="flex flex-wrap gap-2">
+          <div data-animate="gallery-pills" className="flex flex-wrap gap-1.5 sm:gap-2">
             {tags.map((tag) => (
               <button
                 key={tag}
@@ -92,7 +92,7 @@ export function ResultsGallery() {
                   setOpen(null);
                 }}
                 className={cn(
-                  "min-h-[40px] rounded-full border px-4 text-sm font-medium transition-all duration-300",
+                  "min-h-[36px] sm:min-h-[40px] rounded-full border px-3 sm:px-4 text-xs sm:text-sm font-medium transition-all duration-300",
                   selectedTag === tag
                     ? "border-sky-primary bg-sky-primary text-white shadow-md"
                     : "border-sky-line bg-white text-sky-ink hover:border-sky-cyan hover:text-sky-primary",
@@ -104,9 +104,10 @@ export function ResultsGallery() {
           </div>
         </div>
 
+        {/* Gallery Grid: 2 compact columns on mobile, 3 on tablet, 4 on desktop */}
         <div
           data-animate="gallery-grid"
-          className="mt-8 -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0 lg:grid-cols-4"
+          className="mt-6 sm:mt-8 grid grid-cols-2 gap-2.5 sm:gap-4 md:grid-cols-3 md:gap-5 lg:grid-cols-4"
         >
           {visibleGallery.map((g) => {
             const originalIndex = filteredGallery.indexOf(g);
@@ -117,15 +118,15 @@ export function ResultsGallery() {
                 type="button"
                 onClick={() => setOpen(originalIndex >= 0 ? originalIndex : 0)}
                 aria-label={`Ampliar imagen: ${g.alt}`}
-                className="group relative min-w-[78%] shrink-0 snap-start overflow-hidden rounded-[24px] border border-sky-line bg-sky-soft transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-sky-cyan hover:shadow-xl md:min-w-0 will-change-transform"
+                className="group relative overflow-hidden rounded-[16px] sm:rounded-[22px] md:rounded-[24px] border border-sky-line bg-sky-soft transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-1 hover:border-sky-cyan hover:shadow-lg will-change-transform text-left"
               >
                 <img
                   src={g.src}
                   alt={g.alt}
                   loading="lazy"
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.045]"
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                 />
-                <span className="hand absolute bottom-3 left-3 rounded-full bg-white/92 px-3.5 py-1 text-[0.88rem] font-semibold text-sky-primary shadow-sm backdrop-blur-sm">
+                <span className="hand absolute bottom-2 left-2 sm:bottom-3 sm:left-3 rounded-full bg-white/94 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[0.72rem] sm:text-[0.84rem] font-semibold text-sky-primary shadow-sm backdrop-blur-sm truncate max-w-[85%]">
                   {g.tag}
                 </span>
               </button>
@@ -134,11 +135,11 @@ export function ResultsGallery() {
         </div>
 
         {filteredGallery.length > INITIAL_COUNT && (
-          <div className="mt-10 flex justify-center">
+          <div className="mt-8 sm:mt-10 flex justify-center">
             <button
               type="button"
               onClick={() => setIsExpanded((prev) => !prev)}
-              className="group inline-flex items-center gap-2.5 rounded-full border border-sky-primary/30 bg-white px-7 py-3.5 text-[0.98rem] font-semibold text-sky-primary shadow-md transition-all duration-300 hover:border-sky-primary hover:bg-sky-primary hover:text-white hover:shadow-lg active:scale-95"
+              className="group inline-flex items-center gap-2 rounded-full border border-sky-primary/30 bg-white px-5 sm:px-7 py-2.5 sm:py-3.5 text-xs sm:text-[0.98rem] font-semibold text-sky-primary shadow-md transition-all duration-300 hover:border-sky-primary hover:bg-sky-primary hover:text-white hover:shadow-lg active:scale-95"
             >
               <span>
                 {isExpanded

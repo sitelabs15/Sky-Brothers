@@ -287,6 +287,40 @@
   will-change: transform;
 }
 
+@keyframes sky-button-heartbeat {
+  0%,
+  72%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 24px -16px rgba(8, 121, 186, 0.9);
+  }
+  76% {
+    transform: scale(1.045);
+    box-shadow: 0 14px 28px -10px rgba(8, 121, 186, 0.65);
+  }
+  80% {
+    transform: scale(1.01);
+    box-shadow: 0 10px 24px -16px rgba(8, 121, 186, 0.9);
+  }
+  85% {
+    transform: scale(1.06);
+    box-shadow: 0 16px 32px -8px rgba(8, 121, 186, 0.75);
+  }
+  90% {
+    transform: scale(1);
+    box-shadow: 0 10px 24px -16px rgba(8, 121, 186, 0.9);
+  }
+}
+
+.animate-sky-heartbeat {
+  animation: sky-button-heartbeat 5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  transform-origin: center center;
+}
+
+.animate-sky-heartbeat:hover {
+  animation-play-state: paused;
+}
+
 @keyframes blue-wave-undulate-1 {
   0%,
   100% {

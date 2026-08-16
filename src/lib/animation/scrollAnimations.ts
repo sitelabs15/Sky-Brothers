@@ -917,6 +917,7 @@ function animateEquipmentAndBlue(isDesktop: boolean) {
   const internalImg = qs("[data-animate='equipment-img']", equipSection);
   const eyebrow = qs("[data-animate='equipment-eyebrow']", equipSection);
   const lines = q("[data-animate='equipment-line']", equipSection);
+  const equipPara = qs("[data-animate='equipment-para']", equipSection);
   const bullets = q("[data-animate='equipment-bullet']", equipSection);
   const checks = q("[data-animate='equipment-check']", equipSection);
   const cta = qs("[data-animate='equipment-cta']", equipSection);
@@ -980,6 +981,20 @@ function animateEquipmentAndBlue(isDesktop: boolean) {
         duration: TOKENS.durLong,
         ease: TOKENS.easeReveal,
         stagger: TOKENS.staggerNormal,
+      },
+      "-=0.4",
+    );
+  }
+
+  if (equipPara) {
+    gsap.set(equipPara, { opacity: 0, y: 16 });
+    equipTl.to(
+      equipPara,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: TOKENS.easeCard,
       },
       "-=0.4",
     );

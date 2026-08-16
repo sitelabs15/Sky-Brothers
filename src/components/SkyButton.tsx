@@ -19,6 +19,7 @@ type Props = {
   children: ReactNode;
   variant?: keyof typeof variants;
   external?: boolean;
+  pulse?: boolean;
   className?: string;
   ariaLabel?: string;
 };
@@ -28,17 +29,25 @@ export function SkyButton({
   children,
   variant = "primary",
   external = false,
+  pulse = true,
   className,
   ariaLabel,
 }: Props) {
   const isMagnetic = variant === "primary";
+  const shouldPulse = pulse && variant === "primary";
 
   return (
     <a
       href={href}
       aria-label={ariaLabel}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className={cn(base, variants[variant], isMagnetic && "btn-magnetic", className)}
+      className={cn(
+        base,
+        variants[variant],
+        isMagnetic && "btn-magnetic",
+        shouldPulse && "animate-sky-heartbeat",
+        className,
+      )}
     >
       <span className={isMagnetic ? "btn-magnetic-inner" : undefined}>{children}</span>
     </a>

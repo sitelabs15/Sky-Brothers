@@ -23,7 +23,7 @@ export function FloatingWhatsApp() {
       rel="noopener noreferrer"
       aria-label="Agendar por WhatsApp con Sky Brothers"
       className={cn(
-        "fixed right-4 bottom-[18px] z-40 inline-flex min-h-[52px] items-center gap-2 rounded-[14px] bg-sky-primary px-5 text-[0.95rem] font-semibold text-white shadow-[0_16px_36px_-18px_rgba(8,10,11,0.7)] transition-all duration-500 hover:bg-sky-deep md:right-8",
+        "fixed right-4 bottom-[18px] z-40 inline-flex min-h-[52px] items-center gap-2 rounded-[14px] bg-sky-primary px-5 text-[0.95rem] font-semibold text-white shadow-[0_16px_36px_-18px_rgba(8,10,11,0.7)] transition-all duration-500 hover:bg-sky-deep animate-sky-heartbeat md:right-8",
         highlight && "ring-4 ring-sky-cyan/40",
       )}
     >
