@@ -29,7 +29,7 @@ export function Footer() {
                 Sky Brothers
               </span>
               <span className="text-xs text-sky-cyan-soft font-medium">
-                www.limpiezaskybrothers.com.mx
+                skybrothers.com.mx
               </span>
             </div>
           </div>
