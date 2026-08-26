@@ -49,7 +49,7 @@ export function HeroSlider({
       {/* Imagen Después (Limpio) */}
       <img
         src={afterImage}
-        alt="Sillón limpio después del lavado profundo con succión y extracción"
+        alt="Sillón limpio después del lavado profundo con inyección, succión y extracción"
         width={690}
         height={676}
         className="aspect-[5/4] w-full object-cover md:aspect-[4/4.4]"

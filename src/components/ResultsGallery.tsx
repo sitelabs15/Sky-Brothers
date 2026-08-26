@@ -3,7 +3,7 @@ import { X, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-rea
 import { gallery } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-const tags = ["Todos", "Sofás y Salas", "Colchones", "Proceso de Extracción", "Equipo y Servicio"];
+const tags = ["Todos", "Sofás y Salas", "Colchones", "Proceso de Inyección y Extracción", "Equipo y Servicio"];
 
 const INITIAL_COUNT = 8; // 2 filas en layout de 4 columnas
 
@@ -75,7 +75,7 @@ export function ResultsGallery() {
               className="mt-3 text-[1.05rem] leading-[1.65] text-sky-muted"
             >
               Explora nuestros trabajos reales realizados en Huatulco y la costa: limpieza de salas
-              y sofás, desinfección de colchones, procesos de extracción profunda y equipo
+              y sofás, desinfección de colchones, procesos de inyección y extracción profunda y equipo
               profesional.
             </p>
           </div>

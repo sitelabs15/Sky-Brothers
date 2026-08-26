@@ -15,8 +15,8 @@ const steps = [
   },
   {
     n: "03",
-    title: "Lavamos y extraemos",
-    copy: "Utilizamos maquinaria profesional de succión y extracción para realizar una limpieza profunda de la tapicería.",
+    title: "Lavamos, inyectamos, extraemos y desinfectamos",
+    copy: "Utilizamos maquinaria profesional de inyección, succión y extracción para realizar una limpieza profunda de la tapicería.",
     icon: Wind,
   },
 ];

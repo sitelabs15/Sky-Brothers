@@ -22,6 +22,8 @@ import bannerMaquina from "@/assets/recursos/banner-maquina-skybrothers.jpeg";
 import volanteInfo from "@/assets/recursos/volante-informativo.jpeg";
 import publicacionPromocion from "@/assets/Skybrothers-recursos/Publicaciones/WhatsApp Image 2026-08-15 at 12.41.29 AM.jpeg";
 import ilustracionBoquilla from "@/assets/recursos/ilustracion-boquilla.jpeg";
+import inyeccionSuccionResultado from "@/assets/recursos/inyeccion-succion-resultado.jpeg";
+import lavadoSanitizacionResultado from "@/assets/recursos/lavado-sanitizacion-resultado.jpeg";
 import sliderLimpio from "@/assets/Skybrothers-recursos/Slider/limpio.png";
 import sliderSucio from "@/assets/Skybrothers-recursos/Slider/sucio.png";
 
@@ -77,6 +79,8 @@ export const img = {
   volanteInfo,
   publicacionPromocion,
   ilustracionBoquilla,
+  inyeccionSuccionResultado,
+  lavadoSanitizacionResultado,
   // Fotos de trabajo
   fotoSofaMarron1,
   fotoSofaMarron2,
@@ -123,14 +127,14 @@ export type Service = {
 export const services: Service[] = [
   {
     name: "Sofás y sillones",
-    copy: "Lavado y extracción profunda de la tapicería que usas todos los días.",
+    copy: "Lavado con inyección y extracción profunda de la tapicería que usas todos los días, removiendo polvo, arena, sudor y suciedad acumulada.",
     message: "Hola Sky Brothers, me interesa cotizar la limpieza de un sofá.",
     span: "",
     featured: false,
   },
   {
     name: "Colchones",
-    copy: "Succión y lavado para remover polvo, arena y suciedad acumulada.",
+    copy: "Inyección, succión y lavado para eliminar bacterias, ácaros, heces de ácaros, sudor, suciedades y alergias acumuladas.",
     message: "Hola Sky Brothers, me interesa cotizar la limpieza de un colchón.",
     span: "",
     featured: false,
@@ -151,7 +155,7 @@ export const services: Service[] = [
   },
   {
     name: "Alfombras y tapetes",
-    copy: "Lavado con succión y extracción.",
+    copy: "Lavado de inyección, succión y extracción.",
     message: "Hola Sky Brothers, me interesa cotizar la limpieza de alfombras o tapetes.",
     span: "",
     featured: false,
@@ -194,7 +198,7 @@ export const comparisons: Comparison[] = [
     before: img.fotoSofaMarron1,
     after: img.fotoSofaMarron3,
     beforeAlt: "Sofá marrón sucio antes del lavado",
-    afterAlt: "Sofá marrón impecable secándose al sol tras succión y extracción",
+    afterAlt: "Sofá marrón impecable secándose al sol tras inyección, succión y extracción",
     caption: "Sofá de sala marrón · Trabajo real de lavado y secado al sol en Huatulco",
     poster: img.sofaMarronAD,
   },
@@ -204,8 +208,8 @@ export const comparisons: Comparison[] = [
     before: img.sofaAntes,
     after: img.sofaDespues,
     beforeAlt: "Sofá gris antes de la limpieza",
-    afterAlt: "Sofá gris completamente limpio tras succión y extracción",
-    caption: "Sofá de sala · Lavado profundo con succión y extracción",
+    afterAlt: "Sofá gris completamente limpio tras inyección, succión y extracción",
+    caption: "Sofá de sala · Lavado profundo con inyección, succión y extracción",
     poster: img.sofaGrisSL,
   },
   {
@@ -249,7 +253,7 @@ export const gallery = [
   {
     src: img.fotoSofaMarron2,
     alt: "Inyección y succión en cojín de sofá marrón",
-    tag: "Proceso de Extracción",
+    tag: "Proceso de Inyección y Extracción",
   },
   {
     src: img.fotoSofaMarron3,
@@ -294,7 +298,7 @@ export const gallery = [
   {
     src: img.fotoTrabajo8,
     alt: "Proceso de extracción de espuma y suciedad en sofá",
-    tag: "Proceso de Extracción",
+    tag: "Proceso de Inyección y Extracción",
   },
   {
     src: img.fotoTrabajo9,
@@ -314,7 +318,7 @@ export const gallery = [
   {
     src: img.fotoTrabajo12,
     alt: "Técnico operando boquilla de extracción profesional en sofá",
-    tag: "Proceso de Extracción",
+    tag: "Proceso de Inyección y Extracción",
   },
   {
     src: img.fotoTrabajo13,
@@ -329,7 +333,7 @@ export const gallery = [
   {
     src: img.fotoTrabajo15,
     alt: "Agua oscura y suciedad extraída de las fibras del mueble",
-    tag: "Proceso de Extracción",
+    tag: "Proceso de Inyección y Extracción",
   },
   {
     src: img.fotoTrabajo16,
@@ -339,7 +343,7 @@ export const gallery = [
   {
     src: img.fotoTrabajo17,
     alt: "Residuos y polvo atrapado succionados por la máquina",
-    tag: "Proceso de Extracción",
+    tag: "Proceso de Inyección y Extracción",
   },
 ];
 
@@ -371,6 +375,66 @@ export const faqs = [
   },
   {
     q: "¿Qué tipo de equipo utilizan?",
-    a: "Sky Brothers utiliza máquinas profesionales de succión y extracción para realizar la limpieza de las superficies trabajadas.",
+    a: "Sky Brothers utiliza máquinas profesionales de inyección, succión y extracción para realizar la limpieza de las superficies trabajadas.",
+  },
+];
+
+export type CleaningFrequencyItem = {
+  id: string;
+  item: string;
+  frequency: string;
+  idealFor: string;
+  reason: string;
+  message: string;
+};
+
+export const cleaningFrequencies: CleaningFrequencyItem[] = [
+  {
+    id: "sofas",
+    item: "Sofás y Salas de uso diario",
+    frequency: "Cada 6 meses",
+    idealFor: "Salas principales, sillones y sofás familiares",
+    reason: "Elimina sudor corporal, polvo acumulado, células muertas y ácaros antes de que dañen el tejido.",
+    message: "Hola Sky Brothers, me gustaría cotizar la limpieza de mi sala/sofá.",
+  },
+  {
+    id: "colchones",
+    item: "Colchones y Almohadas",
+    frequency: "Cada 6 a 12 meses",
+    idealFor: "Colchones matrimoniales, individuales y almohadas",
+    reason: "Previene alergias respiratorias, erradica ácaros y elimina manchas de sudor y humedad de la costa.",
+    message: "Hola Sky Brothers, me gustaría cotizar la desinfección de mis colchones.",
+  },
+  {
+    id: "autos",
+    item: "Interiores y Asientos de Auto",
+    frequency: "Cada 3 a 6 meses",
+    idealFor: "Autos particulares, camionetas y transporte",
+    reason: "Remueve arena de playa, manchas de bebidas, polvo de carretera y bacterias del calor.",
+    message: "Hola Sky Brothers, me gustaría cotizar el lavado de interiores de mi auto.",
+  },
+  {
+    id: "sillas",
+    item: "Sillas de Comedor y Oficina",
+    frequency: "Cada 6 a 12 meses",
+    idealFor: "Sillas tapizadas, comedores y despachos",
+    reason: "Mantiene la higiene contra derrames de comida, grasa y suciedad por contacto constante.",
+    message: "Hola Sky Brothers, me gustaría cotizar la limpieza de sillas.",
+  },
+  {
+    id: "alfombras",
+    item: "Alfombras y Tapetes",
+    frequency: "Cada 6 meses",
+    idealFor: "Tapetes de sala, recámaras y pasillos",
+    reason: "Extrae suciedad atrapada en las fibras profundas y evita malos olores por humedad.",
+    message: "Hola Sky Brothers, me gustaría cotizar la limpieza de tapetes/alfombras.",
+  },
+  {
+    id: "cunas",
+    item: "Cunas y Carriolas de Bebé",
+    frequency: "Cada 3 a 4 meses",
+    idealFor: "Cunas, carriolas y áreas de descanso infantil",
+    reason: "Sanitización profunda libre de residuos agresivos para proteger la piel y salud del bebé.",
+    message: "Hola Sky Brothers, me gustaría cotizar la limpieza y sanitización de cuna/carriola.",
   },
 ];

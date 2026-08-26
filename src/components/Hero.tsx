@@ -96,7 +96,7 @@ export function Hero() {
               className="enter-rise mt-7 flex flex-wrap gap-x-6 gap-y-2 text-[0.95rem] text-sky-muted"
               style={{ ["--reveal-delay" as string]: "620ms" }}
             >
-              {["Servicio a domicilio", "Succión y extracción profesional"].map((t) => (
+              {["Servicio a domicilio", "Inyección y extracción profesional"].map((t) => (
                 <li key={t} className="flex items-center gap-2">
                   <Check strokeWidth={2} className="h-4 w-4 text-sky-primary" />
                   {t}

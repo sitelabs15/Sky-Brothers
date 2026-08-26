@@ -34,7 +34,7 @@ export function Footer() {
             </div>
           </div>
           <p className="hand mt-4 text-[1.1rem] text-sky-cyan-soft">
-            lavado · limpieza · desinfección
+            limpieza · lavado · desinfección
           </p>
         </div>
 

@@ -6,6 +6,7 @@ import { Services } from "@/components/Services";
 import { BeforeAfter } from "@/components/BeforeAfter";
 import { ResultsGallery } from "@/components/ResultsGallery";
 import { Process } from "@/components/Process";
+import { FrequencyGuide } from "@/components/FrequencyGuide";
 import { ValueSection } from "@/components/ValueSection";
 import { BrandBreak } from "@/components/BrandBreak";
 import { Coverage } from "@/components/Coverage";
@@ -64,6 +65,7 @@ function Index() {
         <BeforeAfter />
         <ResultsGallery />
         <Process />
+        <FrequencyGuide />
         <ValueSection />
         <BrandBreak />
         <Coverage />

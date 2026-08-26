@@ -60,7 +60,7 @@ export function BrandBreak() {
             data-animate="blue-subheading"
             className="hand text-[1.25rem] tracking-wide text-sky-cyan-soft"
           >
-            lavado · limpieza · desinfección
+            limpieza · lavado · desinfección
           </p>
 
           <h2 className="h2-display mt-3 max-w-[22ch]">

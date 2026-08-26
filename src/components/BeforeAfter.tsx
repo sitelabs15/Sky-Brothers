@@ -17,7 +17,7 @@ const FEATURES = [
     label: "Colchón · Desinfección",
     icon: BedDouble,
     image: img.colchonPatronSL,
-    description: "Extracción profunda de ácaros, suciedad y polvo acumulado en fibras.",
+    description: "Inyección, succión y extracción profunda de ácaros, suciedad y polvo acumulado en fibras.",
   },
   {
     id: "auto-asientos",
@@ -44,7 +44,7 @@ const FEATURES = [
     id: "equipo-inyeccion",
     label: "Inyección y Succión",
     icon: Droplets,
-    image: img.bannerMaquina,
+    image: img.inyeccionSuccionResultado,
     description:
       "Tecnología profesional que inyecta solución desinfectante y succiona al instante.",
   },
@@ -52,7 +52,7 @@ const FEATURES = [
     id: "lavado-vapor",
     label: "Lavado Profundo y Sanitización",
     icon: Zap,
-    image: img.volanteInfo,
+    image: img.lavadoSanitizacionResultado,
     description: "Elimina 99.9% de bacterias, hongos y malos olores sin maltratar tus muebles.",
   },
   {
@@ -155,7 +155,7 @@ export function BeforeAfter() {
           </h2>
           <p data-animate="ba-para" className="mt-4 text-[1.05rem] leading-[1.65] text-sky-muted">
             Conoce nuestras publicaciones oficiales con comparativas antes vs. después, procesos de
-            succión y tecnología de limpieza profesional en Bahías de Huatulco.
+            inyección, succión y tecnología de limpieza profesional en Bahías de Huatulco.
           </p>
         </div>
       </div>

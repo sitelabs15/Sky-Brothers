@@ -11,14 +11,15 @@ import video3 from "@/assets/Skybrothers-recursos/Videos/3.mp4";
 import video4 from "@/assets/Skybrothers-recursos/Videos/4.mp4";
 import video5 from "@/assets/Skybrothers-recursos/Videos/5.mp4";
 import video6 from "@/assets/Skybrothers-recursos/Videos/6.mp4";
+import video7 from "@/assets/Skybrothers-recursos/Videos/7.mp4";
 
 const VIDEOS = [
   {
     id: "vid-1",
     src: video1,
-    title: "Extracción con Boquilla Transparente",
+    title: "Inyección y Extracción con Boquilla Transparente",
     subtitle: "Succión instantánea de mugre acumulada en las fibras",
-    badge: "Extracción",
+    badge: "Inyección y Extracción",
   },
   {
     id: "vid-2",
@@ -55,10 +56,17 @@ const VIDEOS = [
     subtitle: "Equipo profesional para un secado rápido",
     badge: "Equipo",
   },
+  {
+    id: "vid-7",
+    src: video7,
+    title: "Limpieza y Desinfección a Fondo",
+    subtitle: "Extracción profunda de residuos en tiempo real",
+    badge: "Resultado",
+  },
 ];
 
 const benefits = [
-  "Extracción en vivo: observa cómo se elimina la suciedad atrapada",
+  "Inyección y extracción en vivo: observa cómo se elimina la suciedad atrapada",
   "Fórmulas desinfectantes que protegen las fibras y colores",
   "Servicio 100% a domicilio en Bahías de Huatulco y la costa",
   "Ideal para sofás, sillones, colchones y vestiduras de auto",
@@ -214,8 +222,8 @@ export function ValueSection() {
               </div>
             </div>
 
-            {/* Pista de Miniaturas de los 6 Videos */}
-            <div className="mt-4 grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3">
+            {/* Pista de Miniaturas de los 7 Videos */}
+            <div className="mt-4 grid grid-cols-4 sm:grid-cols-7 gap-2 sm:gap-2.5">
               {VIDEOS.map((vid, idx) => {
                 const isActive = idx === activeIndex;
                 return (

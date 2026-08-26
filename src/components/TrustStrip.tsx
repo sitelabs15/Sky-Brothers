@@ -2,7 +2,7 @@ import { Home, Wind, Droplets, MapPin } from "lucide-react";
 
 const items = [
   { icon: Home, label: "A domicilio" },
-  { icon: Wind, label: "Succión y extracción" },
+  { icon: Wind, label: "Inyección y extracción" },
   { icon: Droplets, label: "Limpieza profunda" },
   { icon: MapPin, label: "Huatulco, Oaxaca" },
 ];

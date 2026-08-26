@@ -77,8 +77,8 @@ export function Services() {
             data-animate="services-para"
             className="mt-5 max-w-[62ch] text-[1.05rem] leading-[1.65] text-sky-muted"
           >
-            Trabajamos muebles, textiles y tapicerías con equipos profesionales de succión y
-            extracción para ayudar a remover suciedad acumulada, polvo, arena y manchas.
+            Trabajamos muebles, textiles y tapicerías con equipos profesionales de inyección, succión
+            y extracción para ayudar a remover suciedad acumulada, polvo, arena y manchas.
           </p>
         </div>
 
