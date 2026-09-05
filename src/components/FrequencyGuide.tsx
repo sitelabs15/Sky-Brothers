@@ -5,7 +5,8 @@ import {
   Car,
   Armchair,
   Footprints,
-  Baby,
+  Sun,
+  Moon,
   CalendarClock,
   Sparkles,
   ArrowUpRight,
@@ -17,12 +18,13 @@ import { SkyButton } from "@/components/SkyButton";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 const ICONS_MAP: Record<string, React.ElementType> = {
-  sofas: Sofa,
   colchones: BedDouble,
-  autos: Car,
-  sillas: Armchair,
+  sofas: Sofa,
   alfombras: Footprints,
-  cunas: Baby,
+  autos: Car,
+  almohadas: Moon,
+  camastros: Sun,
+  sillas: Armchair,
 };
 
 export function FrequencyGuide() {
